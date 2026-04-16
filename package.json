@@ -1,0 +1,56 @@
+{
+  "name": "contextarch",
+  "version": "0.1.0",
+  "description": "Generate perfect AI context files (.cursorrules, AGENTS.md, CLAUDE.md, copilot-instructions.md) for your project in 30 seconds.",
+  "type": "module",
+  "bin": {
+    "contextarch": "./dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "start": "node dist/index.js",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "ai",
+    "cursor",
+    "cursorrules",
+    "claude",
+    "claude-code",
+    "agents-md",
+    "copilot",
+    "windsurf",
+    "context-engineering",
+    "prompt-engineering",
+    "cli"
+  ],
+  "author": "ContextArch <hello@contextarch.ai>",
+  "license": "MIT",
+  "homepage": "https://contextarch.ai",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ksoventures/contextarch-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ksoventures/contextarch-cli/issues"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@inquirer/prompts": "^7.2.1",
+    "commander": "^12.1.0",
+    "picocolors": "^1.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.2"
+  }
+}
